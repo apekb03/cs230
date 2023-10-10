@@ -1,0 +1,19 @@
+/* this is a css file*/
+/*use tag, class, id -- *, */
+body
+{background-color: rgb(230, 188, 188);
+font-family: cursive;
+color:rgb(97, 144, 173);}
+.main-title{display:flex;
+    justify-content: center;
+    font-weight:bold;
+    font-size: 42;
+}
+.sub-title {display:flex;
+    justify-content: center;
+    color:rgb(97, 144, 173);
+}
+
+.box{
+    background-color:#e096aa
+}
