@@ -1,19 +1,144 @@
 /* this is a css file*/
 /*use tag, class, id -- *, */
-body
-{background-color: rgb(230, 188, 188);
-font-family: cursive;
-color:rgb(97, 144, 173);}
-.main-title{display:flex;
+body       /*use of tag*/
+    {background-color: rgb(230, 188, 188);
+    color:rgb(97, 144, 173);
+    
+}
+
+h1.main-title{display:flex;   /*use of class*/
     justify-content: center;
     font-weight:bold;
     font-size: 42;
-}
-.sub-title {display:flex;
-    justify-content: center;
-    color:rgb(97, 144, 173);
+    padding : 0;
+    margin : 0; 
 }
 
-.box{
+.sub-title {display:flex;       /*use of class*/
+    justify-content: center;
+    color:rgb(97, 144, 173);
+    font-weight: bold;
+    padding : 0;
+    margin : 5;
+    line-height : 20px;
+}
+
+.box{                           /*use of class*/
     background-color:#e096aa
 }
+
+#sub-head{display:flex;         /*use of id*/
+    justify-content: center;
+    font-weight:bold;
+    padding : 0;
+    margin : 0;
+    line-height : 20px
+}
+
+img {display: block;            /*use of tag*/
+    width: 60%;
+    margin: auto;
+    width: 450;
+    border:groove 15px rgb(220, 157, 168);
+    border-radius:15px;
+    line-height:40px;
+    position:relative;
+    top:20px
+}
+
+*{  font-family: cursive;             /*use of * to select everything on the body */
+}
+
+div[items]                          /*use of attribute*/
+{
+    border:groove 15px rgb(220, 157, 168);
+    border: radius 15px;
+    width:fit-content;
+}
+
+div[items="daily items"]            /*use of attribute*/
+{
+    background-image: url(promo.jpeg);
+    font-size: 25;
+    color:rgb(97, 144, 173);
+    position:relative;
+    bottom:318px;
+}
+
+div[items="specials"]{               /*use of attribute*/
+    background-image: url(bee.jpeg);
+    position:relative;
+    left: 1000px;
+    bottom:1400px;
+    margin-bottom: 10000px;
+    font-size: 25;
+    color:rgb(4, 26, 114);
+}
+
+/*using descendant selector to coordinate the color for the list*/
+#cookieflavors li {
+    color:rgb(16, 143, 223);
+}
+#sconeflavors li{
+    color:rgb(224, 12, 47)
+}
+#muffinflavors li{
+    color:rgb(112, 164, 8)
+}
+#croissantflavors li{
+    color:rgb(16, 176, 139)
+}
+#baguetteflavors li{
+    color:rgb(127, 57, 69)
+}
+
+/* using child combinator of div*/
+div[items="daily items"]>h1 {
+    text-shadow: 2px 2px rgb(234, 141, 157);   
+}
+
+/*fixing text position in the list in the image*/
+.fix {
+    line-height: 15px;
+    padding: 15px;
+}
+
+/*using not selector to change text for regular menu and summer specials*/
+div:not([items="specials"]){text-shadow: 1px 1px rgb(147, 13, 35);}
+
+.customer{border: groove 15px rgb(220, 157, 168);
+        width: fit-content;
+        position:relative;
+        bottom:500px
+}
+
+button{color:rgb(97, 144, 173);
+        background-color: white;
+        border: groove;
+        padding:5px;
+}
+
+button:hover{background-color:#e096aa;
+            cursor:pointer
+}
+
+button:active{background-color:green
+}
+
+input{color: rgb(97, 144, 173);
+        padding:5px;
+        justify-content:center}
+input:focus{background:rgb(222, 218, 218)           /*learned this from the internet*/
+}
+
+.select:nth-child(odd){color:green;}
+#vegan {font-size: 15;
+        position:relative;
+        left: 100px;
+        padding:0px;
+        line-height:0px;
+        color:green
+}
+
+a[href]{color:rgb(97, 144, 173);
+        font-weight:bold;}
