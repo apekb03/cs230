@@ -112,17 +112,17 @@ div:not([items="specials"]){text-shadow: 1px 1px rgb(147, 13, 35);}
         bottom:500px
 }
 
-button{color:rgb(97, 144, 173);
+button{color:rgb(97, 144, 173);                 /*button*/
         background-color: white;
         border: groove;
         padding:5px;
 }
 
-button:hover{background-color:#e096aa;
+button:hover{background-color:#e096aa;          /*hover*/
             cursor:pointer
 }
 
-button:active{background-color:green
+button:active{background-color:green            /*active*/
 }
 
 input{color: rgb(97, 144, 173);
