@@ -131,7 +131,7 @@ input{color: rgb(97, 144, 173);
 input:focus{background:rgb(222, 218, 218)           /*learned this from the internet*/
 }
 
-.select:nth-child(odd){color:green;}
+.select:nth-child(odd){color:green;}                /*nth child*/
 #vegan {font-size: 15;
         position:relative;
         left: 100px;
