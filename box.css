@@ -1,0 +1,95 @@
+/* this is a css file*/
+body 
+
+*{
+        color:rgb(111, 111, 20);
+        font-family: Brush Script MT;
+}
+.sticky{
+        padding: 10 px;
+        margin: 10px;
+        border: solid 5px yellow;
+        border-width: 5px;
+        background-color: violet;
+        font-size: 45;
+        font-weight: bold;
+        text-align: center;
+        position:fixed;    
+        text-shadow: 2px 2px rgb(223, 223, 170);
+        width:90%;
+}
+.shop{
+        position:relative;
+        margin:10px;
+        left:43%;
+        top:20%;
+        font-size:32;
+        z-index: -1;
+        border: groove beige;
+        border-width: 1em;
+        width:fit-content;
+        background-image: linear-gradient(to left, beige,rgb(56, 21, 21));
+        text-shadow: 1px 1px rgb(32, 31, 36);
+        
+}
+.white{
+        position:absolute;
+        background-color:beige;
+        top:288px;
+        margin:10px;
+        font-size:23px;
+        width:20%;
+        max-height:fit-content;
+        border:groove rgb(56, 21, 21);
+        border-width:1em;
+        z-index: -1;
+}
+
+.dark{
+        position:absolute;
+        background-color:rgb(56, 21, 21);
+        top:750px;
+        margin:10px;
+        width:20%;
+        min-height: 40px;
+        font-size: 23px;
+        border:groove beige;
+        border-width: 1em;
+        z-index: -1;
+}
+.milk{
+        position:absolute;
+        background-color:beige;
+        top:300px;
+        right:100px;
+        font-size: 23px;
+        width:20%;
+        margin-right: 20px;
+        min-width:10%;
+        border:groove rgb(56, 21, 21);
+        border-width:1em;
+        z-index: -1;
+}
+
+.seasonal{position:absolute;
+        background-color:  rgb(56, 21, 21);
+        top:750px;
+        margin-right:20px;
+        font-size:23px;
+        width:20%;
+        max-width:30%;
+        right:100px;
+        border: groove beige;
+        border-width:1em;
+        z-index: -1;
+
+}
+
+a[href]{font-weight: bold;
+        position:relative;
+        margin:10px;
+        top:7em;
+}
+
+
+
