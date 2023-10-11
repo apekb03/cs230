@@ -3,6 +3,7 @@
 body       /*use of tag*/
     {background-color: rgb(230, 188, 188);
     color:rgb(97, 144, 173);
+    height: 100%;
     
 }
 
@@ -109,7 +110,8 @@ div:not([items="specials"]){text-shadow: 1px 1px rgb(147, 13, 35);}
 .customer{border: groove 15px rgb(220, 157, 168);
         width: fit-content;
         position:relative;
-        bottom:500px
+        bottom:500px;
+        
 }
 
 button{color:rgb(97, 144, 173);                 /*button*/
@@ -142,3 +144,4 @@ input:focus{background:rgb(222, 218, 218)           /*learned this from the inte
 
 a[href]{color:rgb(97, 144, 173);
         font-weight:bold;}
+
