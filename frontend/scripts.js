@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                         output += `
 
-                        <img href="${bg_img}"></img>
+                        <img src="${bg_img}"></img>
                         <h1>${title}</h1>
                         <br>
                         <h5>${genre}</h5>`;
