@@ -20,14 +20,63 @@ other (e.g., email, slider, date/time) -->
                 font-size: 25px;
                 font-weight: bold;
             }
+
         </style>
     </head>
     <body>
         <div class="main">Application Form</div>
-        <form>
-            <input type="text" id="name" name="name" required>
-            <label for="name">Name</label>
-        </form>
+        <br>
+        <form action="submission.php" method="post">
+            <label for="name"> Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your name'"required>
+            <br><br>
 
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="number" placeholder="yourname@gmail.com" onfocus="this.placeholder=''" onblur="this.placeholder='yourname@gmail.com'"required>
+            <br><br>
+
+            <label for="concern">Message</label><br>
+            <textarea id="concern" name="concerns" rows="3" placeholder="Tell us your concerns..." onfocus="this.placeholder=''" onblur="this.placeholder='Tell us your concerns...'"></textarea>
+            <br><br>
+
+            <label for="stream">Music Streaming Platform</label><br>
+            <select id="strea," name="stream">
+                <option value="apple">Apple Music</option>
+                <option value="spotify">Spotify</option>
+                <option value="amazon">Amazon Music</option>
+            </select>
+            <br><br>
+
+            <label>Genre</label><br>
+            <input type="checkbox" id="rock" name="genre" value="rock">
+            <label for="rock">Rock</label>
+            <input type="checkbox" id="pop" name="genre" value="pop">
+            <label for="pop">Pop</label>
+            <input type="checkbox" id="rnb" name="genre" value="rnb">
+            <label for="rnb">RnB</label>
+            <br><br>
+
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+            <label>On a scale of 1 to 10, how much do you listen to music?</label><br>
+            <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+            <br><br>
+            
+            <label for="birthday">Date of Birth</label><br>
+            <input type="date" id="birthday" name="birthday">
+            <br><br>
+
+            <input type="reset">
+            <input type="submit">
+
+        </div>
+
+            
+        </form>
+        <a href="index.html">Main Page</a>
     </body>
 </html>
