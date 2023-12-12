@@ -8,14 +8,26 @@ icons-->
         <style>
             body {
                 font-size: 15px;
+                background-color: pink;
+                font-family: 'Times New Roman', Times, serif;
             }
             
             @media (max-width: 800px) {
                 body {
                     font-size: 19px;
                 }
-                .cards { grid-template-columns: repeat(2, 1fr); }
+            }
+            .main { 
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
 
+            .inside {
+                flex: 1;
+                padding:10px;
+                background-color: rgb(231, 230, 230);
+                text-align:center;
             }
         </style>
 
@@ -35,17 +47,18 @@ icons-->
 
     </head>
     <body>
-        hello
-        <div class="starting-point">
-            <table>
-                <tr>
-                    <td>Home</td>
-                    <td>Products</td>
-                    <td>Help</td>
-                    <td>About</td>
+        <header> <h1> Welcome to my page </h1> </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+       
+        <div class="main">
+            <div class="inside"><a href="index.html"></a>
+            </div>
+            <div class="inside">Main Menu</div>
 
-                </tr>
-            </table>
         </div>
     </body>
 </html>
