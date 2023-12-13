@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>ApekFLIX</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        @media screen and (max-width: 600px) {
-        img { max-width: 500px; max-height: 300px; }
-        div { width: 800px; }
-        }
-    </style>
+
 </head>
 <body>
     <div class="box">
@@ -24,9 +19,9 @@
 
 
     <div class="main">
-    <label for="movies">Search for your favorite movie</label><br>
-    <input type="text" id="movies" name="movies" placeholder="Type your movie" onfocus="this.placeholder=''" onblur="this.placeholder='Type your movie'">
-    <br>
+    <div><label for="movies">Search Your Favorite Movie</label></div>
+    <div class="input"><input type="text" id="movies" name="Type here..." placeholder="Search" onfocus="this.placeholder=''" onblur="this.placeholder='Type here...'">
+    </div><br>
     <button id="searchButton">Search</button>
     </div>
     <div class="result"></div>

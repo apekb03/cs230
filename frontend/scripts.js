@@ -27,20 +27,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.titles.length > 0) {
 
                     data.titles.forEach(item => {
-                        const bg_img = item.jawSummary.backgroundImage.url;  // this is for movie image
                         const genre = item.jawSummary.genres[0].name;  // this is for movie genre])
+                        const bg_img = item.jawSummary.backgroundImage.url;  // this is for movie image
                         const title = item.jawSummary.title;
 
                         output += `
 
+                        
+                        <h1>Title: ${title}</h1>
+                        
                         <img src="${bg_img}"></img>
-                        <h1>${title}</h1>
-                        <br>
-                        <h5>${genre}</h5>
+                        <h2>Genre: ${genre}</h2>
                         <details>
                         <summary>Summary...</summary>
                         ${item.jawSummary.synopsisRegular}
-                        </details>`;
+                        </details><br>`;
                     });
                 } else {
                     output = '<p>No items found.</p>';
