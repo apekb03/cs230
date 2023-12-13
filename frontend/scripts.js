@@ -36,7 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         <img src="${bg_img}"></img>
                         <h1>${title}</h1>
                         <br>
-                        <h5>${genre}</h5>`;
+                        <h5>${genre}</h5>
+                        <details>
+                        <summary>Summary...</summary>
+                        ${item.jawSummary.synopsisRegular}
+                        </details>`;
                     });
                 } else {
                     output = '<p>No items found.</p>';
